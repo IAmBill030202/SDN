@@ -4,7 +4,7 @@ const mongoose =require('mongoose')
 const Dishes = require('./models/dishes')
 const url = "mongodb://127.0.0.1:27017/conFusion";
 const connect = mongoose.connect(url)
-const dishRouter = require('./dishRouter')
+const dishRouter = require('./routers/dishRouter')
 
 connect.then((db) => {
     console.log('Connected to server');
